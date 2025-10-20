@@ -5,7 +5,7 @@ export default function PatientImage({ type = "user", src, name = "User", classN
   const srcRender = () => {
     if (src && typeof src === "string" && src.length) {
       // return { uri: `${process.env.EXPO_PUBLIC_BACKEND_URL}${src}` };
-      return { uri: `http://192.168.0.114:8000${src}` };
+      return { uri: `https://192.168.93.100:80${src}` };
     }
 
     switch (type) {

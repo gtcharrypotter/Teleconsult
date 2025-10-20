@@ -4,7 +4,7 @@ import React from 'react';
 export default function UserImage({ type = "user", src, name = "User", className="", ...rest }) {
   const srcRender = () => {
     if (src && typeof src === "string" && src.length) {
-      return { uri: `http://192.168.0.114:8000${src}` };
+      return { uri: `https://192.168.93.100:80${src}` };
     }
 
     switch (type) {

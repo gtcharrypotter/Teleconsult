@@ -19,10 +19,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '@/hooks/useAuth';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 
-const SIGNALING_SERVER = 'ws://192.168.0.126:3000';
+const SIGNALING_SERVER = 'ws://192.168.93.100:3000';
 const TURN_SERVER = {
-  urls: 'turn:192.168.0.126:3478',
-  username: 'gtc',
+  urls: 'turn:192.168.93.100:3478',
+  username: 'gtc_his',
   credential: 'gtc@ihp888',
 };
 const pcConfig = { iceServers: [TURN_SERVER] };

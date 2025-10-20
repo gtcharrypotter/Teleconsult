@@ -5,7 +5,7 @@ import { StyleSheet, View } from 'react-native';
 const PatientImage = ({ type, src, name, className="" , ...rest }) => {
     const srcRender = () => {
     if (src && src.length) {
-      return { uri: `http://192.168.0.114:8000${src}` }; // Update with actual backend URL
+      return { uri: `https://192.168.93.100:80${src}` }; // Update with actual backend URL
     } else {
       switch (type) {
         case "user":
